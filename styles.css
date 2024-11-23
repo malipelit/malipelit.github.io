@@ -39,14 +39,14 @@ header .tagline {
 }
 
 /* Navigation Bar */
-nav {
+.navbar {
     background-color: #333;
     text-align: center;
     padding: 15px 0;
     border-bottom: 5px solid #333;
 }
 
-nav a {
+.navbar a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
@@ -54,10 +54,18 @@ nav a {
     text-transform: uppercase;
 }
 
-nav a:hover {
+.navbar a:hover {
     background-color: #4CAF50;
     padding: 10px;
     border-radius: 5px;
+}
+
+.navbar a.active {
+    color: greenyellow;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
 }
 
 /* Section Titles */

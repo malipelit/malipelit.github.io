@@ -1,0 +1,13 @@
+{
+    "personal": {
+        "firstname": "Mehmet Ali",
+        "lastname": "Pelit",
+        "job": "MEng Student"
+    },
+    "contact": {
+        "email": "mapelit99@gmail.com",
+        "phone": "123-456-7890",
+        "linkedin": "https://www.linkedin.com/in/mehmet-ali-pelit/",
+        "github": "https://github.com/malipelit"
+    }
+}
