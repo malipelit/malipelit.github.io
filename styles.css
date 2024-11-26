@@ -6,7 +6,10 @@
 }
 
 /* Body styling */
-body {
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
@@ -14,36 +17,35 @@ body {
 }
 
 .container {
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-body {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Header */
 header {
-    background-color: #4CAF50;
+    display: flex;
+    background-color: #333;
     color: white;
-    padding: 60px 0;
-    text-align: center;
-    border-bottom: 5px solid #333;
-}
-
-header h1 {
-    font-size: 3em;
-    text-transform: uppercase;
-}
-
-header .tagline {
-    font-style: italic;
-    font-size: 1.2em;
+    padding: 0 0;
+    text-align: left;
+    justify-content: right;
+    align-items: center;
 }
 
 /* Navigation Bar */
 .navbar {
     background-color: #333;
     text-align: center;
-    padding: 15px 0;
-    border-bottom: 5px solid #333;
 }
 
 .navbar a {
@@ -56,7 +58,7 @@ header .tagline {
 
 .navbar a:hover {
     background-color: #4CAF50;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 
@@ -67,6 +69,35 @@ header .tagline {
     font-size: 1.1em;
     text-transform: uppercase;
 }
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 /* Section Titles */
 h2 {
@@ -149,7 +180,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 50px;
+    margin-top: auto;
 }
 
 footer a {
@@ -172,4 +203,87 @@ footer a:hover {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+
+#language-selector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f0f0f0;  /* Light grey background */
+    border: 2px solid #007BFF;  /* Blue border */
+    border-radius: 5px;  /* Rounded corners */
+    font-size: 16px;  /* Font size */
+    padding: 10px;  /* Padding inside the select box */
+    width: 100px;  /* Set width of the select box */
+    appearance: none;  /* Remove default dropdown arrow (optional) */
+    cursor: pointer;  /* Change cursor on hover */
+}
+
+#language-selector option {
+    padding: 10px;  /* Padding inside each option */
+    background-color: #4CAF50;  /* White background for options */
+    font-size: 14px;  /* Font size of options */
+    color: white;  /* Text color */
+}
+
+#language-selector:hover {
+    border-color: #4CAF50;
+}
+
+/* Option selected style */
+#language-selector option:checked {
+    background-color: #4CAF50;  /* Change background color when selected */
+    font-weight: bold;
+    color: white;  /* Change text color when selected */
+}
+
+.centered-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.centered-div h1 {
+    font-size: 3em;
+    max-width: 60%;
+    min-width: 400px;
+}
+
+.centered-div .tagline {
+    font-style: italic;
+    text-align: left;
+    max-width: 60%;
+    min-width: 350px;
+    font-size: 1.2em;
+}
+
+.site-name {
+    flex: 1;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 24px;
+    letter-spacing: -0.1em;
+    margin: 10px auto;
+}
+
+.site-name a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.site-name a:hover {
+    font-style: normal;
+    letter-spacing: 0.1em;
+    padding: 10px;
+    border-radius: 5px;
 }
