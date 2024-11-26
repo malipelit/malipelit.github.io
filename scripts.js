@@ -30,8 +30,8 @@ fetch('data.json')
                         <div class="dropdown">
                             <a href="hobbies.html">Hobbies</a>
                             <div class="dropdown-content">
-                                <a href="#tennis">Tennis</a>
-                                <a href="#rocketleague">Rocket League</a>
+                                <a href="hobbies.html#tennis">Tennis</a>
+                                <a href="hobbies.html#rocketleague">Rocket League</a>
                             </div>
                         </div>
                         <a href="hobbies.html">Hobbies</a>
