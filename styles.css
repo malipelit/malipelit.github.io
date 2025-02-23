@@ -1,7 +1,6 @@
-/* General Reset */
 body {
     /* background-color: white; */
-    background: linear-gradient(to bottom, #aaa, white, white, white, white, white, white, white, white);
+    background: linear-gradient(to bottom, #aaa, white,white, white, white, white, white, white, white, white);
     margin: 0;
     padding: 0;
     padding-top: 300px;
@@ -14,7 +13,6 @@ html {
     scroll-padding-top: 250px; /* Adjust this value to match the height of your fixed header */
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
-  
 
 h1, p, ul, li, a {
     margin: 0;
@@ -22,6 +20,45 @@ h1, p, ul, li, a {
     text-decoration: none;
     list-style: none;
     font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2.5em; /* Larger heading sizes */
+}
+
+p, a, td {
+    font-size: 1.5em; /* Regular paragraph size */
+}
+
+footer p {
+    font-size: 18px; /* Default footer text size */
+}
+
+footer .social-links a {
+    font-size: 24px; /* Default icon size */
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 1000px) {
+    body {
+        font-size: 14px; /* Smaller font size for the whole page */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 2em; /* Reduce the size of headings */
+    }
+
+    p, a, td {
+        font-size: 1.1em; /* Smaller paragraph text */
+    }
+
+    footer p {
+        font-size: 14px; /* Smaller footer text */
+    }
+
+    footer .social-links a {
+        font-size: 20px; /* Smaller icon size */
+    }
 }
 
 /* Header Styling */
@@ -178,4 +215,12 @@ footer a:hover {
     .nav-menu.active {
         display: flex; /* Show nav links when active */
     }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, white, black, white);
+    width: 50%;
+    margin: 20px auto;
 }
