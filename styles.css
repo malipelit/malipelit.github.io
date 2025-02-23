@@ -1,7 +1,7 @@
 /* General Reset */
 body {
     /* background-color: white; */
-    background: linear-gradient(to bottom, #aaa, white, white, white, white, white, white, white);
+    background: linear-gradient(to bottom, #aaa, white, white, white, white, white, white, white, white);
     margin: 0;
     padding: 0;
     padding-top: 300px;
@@ -11,7 +11,7 @@ body {
 }
 
 html {
-    scroll-padding-top: 170px; /* Adjust this value to match the height of your fixed header */
+    scroll-padding-top: 250px; /* Adjust this value to match the height of your fixed header */
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
   
@@ -92,38 +92,6 @@ header {
     background: linear-gradient(to top, #aaa, #eee, #eee, #eee, #eee, #eee);
 }
 
-/* Dropdown Menu */
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444; /* Slightly lighter grey than header */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    z-index: 10;
-}
-
-.dropdown li {
-    padding: 10px;
-}
-
-/* Dropdown Links */
-.dropdown a {
-    color: #fff;
-    font-size: 0.9rem;
-}
-
-/* Hover Effect for Dropdown Links */
-.dropdown a:hover {
-    background-color: #666; /* Even lighter grey for hover */
-}
-
-/* Show Dropdown on Hover */
-.nav-menu > li:hover .dropdown {
-    display: block;
-}
-
 .body-container {
     background: linear-gradient(to top, #aaa, white, white, white, white, white, white, white);
     padding-bottom: 300px;
@@ -145,6 +113,7 @@ header {
     align-items: center;
     border: 0.2em solid black;
     transition: all 0.2s ease;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .container:hover {
@@ -154,19 +123,59 @@ header {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: auto;
 }
 
+footer p {
+    margin-bottom: 10px; /* Adds vertical gap between the <p> and the social links */
+}
+
 footer a {
-    color: #4CAF50;
+    color: #ddf;
     text-decoration: none;
     margin: 0 10px;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Table */
+.container-table {
+    width: 80%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.container-table th,
+.container-table td {
+    padding: 12px;
+    /* border: 1px solid #ddd; */
+}
+
+.left-column {
+    text-align: left;
+}
+
+.right-column {
+    text-align: right;
+}
+
+/* Media Query for screens less than 1000px */
+@media (max-width: 1000px) {
+    .nav-menu {
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show nav links when active */
+    }
 }

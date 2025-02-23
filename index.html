@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehmet's Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Simple website with grey tones -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
@@ -16,7 +18,7 @@
         </div>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="index.html">Home</a></li> -->
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -31,59 +33,126 @@
     </header>
     
     <div class="body-container">
-        <div class="container" id="projects">
-            <h1>Projects</h1>
-            <h2>Aselsan</h2>
-            <p>Full-Time Software Engineering</p>
-            
-            <h2>Aselsan</h2>
-            <p>Part-Time Software Engineering</p>
-            
-            <h2>Mikro Biyosistemler</h2>
-            <p>R&D Software Engineer</p>
-            
-            <h2>Aselsan</h2>
-            <p>Intern Software Engineering</p>
-        </div>
-        <div class="container" id="skills">
-            <h1>Skills</h1>
-
-            <h2>Aselsan</h2>
-            <p>Full-Time Software Engineering</p>
-            
-            <h2>Aselsan</h2>
-            <p>Part-Time Software Engineering</p>
-            
-            <h2>Mikro Biyosistemler</h2>
-            <p>R&D Software Engineer</p>
-            
-            <h2>Aselsan</h2>
-            <p>Intern Software Engineering</p>
+        <div class="container" id="education">
+            <h1>Education</h1>
+            <table class="container-table">
+                <tbody>
+                    <tr>
+                        <td class="left-column"><strong>University of Waterloo</strong></td>
+                        <td class="right-column">Waterloo, ON</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">M.Eng. in Computer Engineering</td>
+                        <td class="right-column">January 2024 - April 2025 (Continues)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="container-table">
+                <tbody>
+                    <tr>
+                        <td class="left-column"><strong>Orta Dogu Technical University</strong></td>
+                        <td class="right-column">Ankara, TURKIYE</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">B.S. in Electrical and Computer Engineering</td>
+                        <td class="right-column">October 2018 - June 2022</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="container-table">
+                <tbody>
+                    <tr>
+                        <td class="left-column"><strong>Nuh Mehmet Baldoktu Anatolian High School</strong></td>
+                        <td class="right-column">Kayseri, TURKIYE</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="container-table">
+                <tbody>
+                    <tr>
+                        <td class="left-column"><strong>50 Years Secondary School</strong></td>
+                        <td class="right-column">Tekirdag, TURKIYE</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"></td>
+                        <td class="right-column"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="container" id="experience">
             <h1>Experience</h1>
+            <table class="container-table">
+                <tbody>
+                    <tr>
+                        <td class="left-column"><strong>Aselsan</strong></td>
+                        <td class="right-column">Ankara, TURKIYE</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">Full-Time Software Engineer</td>
+                        <td class="right-column">June 2022 - October 2022</td>
+                    </tr>
+                </tbody>
+            </table>
             
-            <h2>Aselsan</h2>
-            <p>Full-Time Software Engineering</p>
+            <table class="container-table">
+                <tbody>
+                    <tr>
+                        <td class="left-column"><strong>Aselsan</strong></td>
+                        <td class="right-column">Ankara, TURKIYE</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">Part-Time Software Engineer</td>
+                        <td class="right-column">September 2021 - June 2022</td>
+                    </tr>
+                </tbody>
+            </table>
             
-            <h2>Aselsan</h2>
-            <p>Part-Time Software Engineering</p>
+            <table class="container-table">
+                <tbody>
+                    <tr>
+                        <td class="left-column"><strong>Mikro Biyosistemler</strong></td>
+                        <td class="right-column">Ankara, TURKIYE</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">Intern R&D Software Engineer</td>
+                        <td class="right-column">August 2021 - September 2021</td>
+                    </tr>
+                </tbody>
+            </table>
             
-            <h2>Mikro Biyosistemler</h2>
-            <p>R&D Software Engineer</p>
-            
-            <h2>Aselsan</h2>
-            <p>Intern Software Engineering</p>
+            <table class="container-table">
+                <tbody>
+                    <tr>
+                        <td class="left-column"><strong>Aselsan</strong></td>
+                        <td class="right-column">Ankara, TURKIYE</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">Intern Software Engineer</td>
+                        <td class="right-column">July 2021 - August 2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container" id="projects">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="container" id="skills">
+            <h1>Skills</h1>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Mehmet Pelit | <a href="mapelit99@gmail.com">Contact Me</a></p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/mehmet-ali-pelit/">LinkedIn</a>
-                    <a href="https://github.com/malipelit">GitHub</a>
-                </div>
+        <p>&copy; 2024 Mehmet Pelit</p>
+        <div class="social-links">
+            <a href="mapelit99@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/mehmet-ali-pelit/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/malipelit"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
