@@ -38,29 +38,6 @@ footer .social-links a {
     font-size: 24px; /* Default icon size */
 }
 
-/* Media query for screens smaller than 500px */
-@media (max-width: 1000px) {
-    body {
-        font-size: 14px; /* Smaller font size for the whole page */
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 2em; /* Reduce the size of headings */
-    }
-
-    p, a, td {
-        font-size: 1.1em; /* Smaller paragraph text */
-    }
-
-    footer p {
-        font-size: 14px; /* Smaller footer text */
-    }
-
-    footer .social-links a {
-        font-size: 20px; /* Smaller icon size */
-    }
-}
-
 /* Header Styling */
 header {
     background-color: #eee; /* Dark grey background */
@@ -88,17 +65,17 @@ header {
 /* Header Title */
 .header-title {
     text-align: left;
-    min-width: 350px;
+    min-width: 330px;
 }
 
 .header-title h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .header-title p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: italic;
     color: #444; /* Light grey for tagline */
 }
@@ -116,7 +93,7 @@ header {
 /* Links */
 .nav-menu a {
     color: #000;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
     line-height: 1.5; 
     transition: all 0.2s ease;
@@ -143,7 +120,7 @@ header {
     background-color: #eee;
     box-sizing: border-box;
     margin: 2%;
-    width: 80%; /* Adjust width as needed */
+    width: 90%; /* Adjust width as needed */
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -179,12 +156,12 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    text-shadow: -5px 0 20px, 5px 0 20px rgb(255, 255, 255);
 }
 
-/* Table */
 .container-table {
-    width: 80%;
-    margin: 20px 0;
+    width: 90%;
+    margin: 0px 0;
     border-collapse: collapse;
 }
 
@@ -223,4 +200,43 @@ hr {
     background: linear-gradient(to right, white, black, white);
     width: 50%;
     margin: 20px auto;
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 1000px) {
+    body {
+        font-size: 14px; /* Smaller font size for the whole page */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 2em; /* Reduce the size of headings */
+    }
+
+    p, a, td {
+        font-size: 1.1em; /* Smaller paragraph text */
+    }
+
+    .header-title h1 {
+        font-size: 2rem;
+    }
+
+    .header-title p {
+        font-size: 1rem;
+    }
+
+    .container-table {
+        width: 100%;
+    }
+
+    .container {
+        width: 98%;
+    }
+
+    footer p {
+        font-size: 14px; /* Smaller footer text */
+    }
+
+    footer .social-links a {
+        font-size: 20px; /* Smaller icon size */
+    }
 }
