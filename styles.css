@@ -65,7 +65,7 @@ header {
 /* Header Title */
 .header-title {
     text-align: left;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 .header-title h1 {
