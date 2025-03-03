@@ -65,17 +65,17 @@ header {
 /* Header Title */
 .header-title {
     text-align: left;
-    min-width: 330px;
+    min-width: 300px;
 }
 
 .header-title h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .header-title p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: italic;
     color: #444; /* Light grey for tagline */
 }
